@@ -1,0 +1,27 @@
+{
+  "name": "pollsimulator",
+  "version": "1.0.0",
+  "description": "Lab 1 Enterprise Computing Poll simulator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmangSharma10/EC_Lab1_Pollstimulator.git"
+  },
+  "author": "Umang Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UmangSharma10/EC_Lab1_Pollstimulator"
+  },
+  "homepage": "https://github.com/UmangSharma10/EC_Lab1_Pollstimulator",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "node": "^16.6.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {}
+}

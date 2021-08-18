@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Add Candidates</title>
+</head>
+
+<body>
+    <div style=" margin: auto; width: 50%;border: 3px solid rgb(10, 10, 10);padding: 10px;">
+        <h1>Add Candidates</h1>
+        <form action="/add" method="POST" class="my-4">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Student Name </label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Student ID</label>
+                <input type="text" class="form-control" id="id" name="id" placeholder="Enter ID">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+    </div>
+    <table class='table table-responsive'>
+        <thead>
+            <tr>
+                <th>IDS</th>
+                <th>NAMEs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% list.forEach(X =>{ %>
+                <tr>
+                    <td>
+                        <%= X.ID %>
+                    </td>
+                    <td>
+                        <%= X.name %>
+                    </td>
+                </tr>
+                <% }) %>
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button type="button" class="btn btn-secondary" onclick="location.href='/'">Back to HomePage</button>
+</body>
+
+</html>

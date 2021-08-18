@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>POLL RESULT</title>
+</head>
+
+<body>
+    <h1>POLL RESULT</h1>
+    <table class='table table-responsive'>
+        <thead>
+            <tr>
+                <th>Winner ID</th>
+                <th>Winner NAME</th>
+                <th>Winner Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>
+                    <%= list[0].ID %>
+                </td>
+                <td>
+                    <%= list[0].name %>
+                </td>
+                <td>
+                    <%= list[0].votes %>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class='table table-responsive'>
+        <thead>
+            <tr>
+                <th>RunnerUP IDS</th>
+                <th>RunnerUP NAMEs</th>
+                <th>RunnerUP Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <%= list[1].ID %>
+                </td>
+                <td>
+                    <%= list[1].name %>
+                </td>
+                <td>
+                    <%= list[1].votes %>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <button type="button" class="btn btn-secondary" onclick="location.href='/'">Back to HomePage</button>
+</body>
+
+</html>
